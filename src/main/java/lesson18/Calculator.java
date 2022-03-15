@@ -32,12 +32,12 @@ public class Calculator{
                 throw new IllegalStateException("Unexpected value: " + op);
         }
         return result;
-        //System.out.println(result);
+
 
     }
 
     private int sum(int arg1, int arg2){
-        //ApplicationContext context = new ClassPathXmlApplicationContext("configuration.xml");
+
         MultiplyProcessor multiplyProcessor = context.getBean(MultiplyProcessor.class);
         return multiplyProcessor.process(arg1, arg2);
     }
